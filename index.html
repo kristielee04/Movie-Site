@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Movie Site</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="topnav">
+      <a class="active" href="index.html">Movie Site</a>
+      <div class="search-container">
+        <form role="search" id="form" autocomplete="off">
+          <input type="search" id="query" name="q" placeholder="Search.." />
+        </form>
+      </div>
+      <a class="filter" href="index.html?filter=">Filter</a>
+    </div>
+
+    <section id="genre-selection" style="display: none"></section>
+
+    <section id="movies"></section>
+
+    <div id="no-movies" style="display: none">No Movies Found</div>
+
+    <div id="page-buttons">
+      <button
+        class="pagination"
+        type="button"
+        id="prev"
+        style="visibility: hidden"
+      >
+        <
+      </button>
+      <button class="pagination" type="button" id="next">></button>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>
